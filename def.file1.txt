@@ -1,0 +1,59 @@
+@Library ('sample-lib')_
+ pipeline
+ {
+     agent any
+      stages
+       {
+          stage ('testing of sum')
+          {
+              steps
+              {
+                  script
+                  {
+                      math.sum(10,20)
+                  }
+              }    
+          }
+          
+          stage ('check sub')
+          {
+              steps
+              {
+                  script
+                  {
+                      math.sub(10,20)
+                  }
+              }
+          }
+          
+          stage ('check multipication')
+          {
+              steps
+              {
+                  script
+                  {
+                      math.mulitplication(20,40)
+                  }
+              }
+          }
+          
+          stage ('check divison')
+          {
+              steps
+              {
+                  script
+                  {
+                     math.divison(20,40)
+
+                  }
+              }
+          }
+          
+          
+          
+          
+          
+          
+          
+      }
+  }

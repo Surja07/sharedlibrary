@@ -1,4 +1,5 @@
-def gitdownload(repo)
+def gitDownload(repo)
 {
-   git branch: 'main', url: "https://github.com/Surja07/Maven1/${repo}.git"
+    git "https://github.com/IntelliqDevops/${repo}.git"
+
 }
